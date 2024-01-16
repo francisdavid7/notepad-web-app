@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Notes App | Franco.dev</title>
+</head>
+<body>
+
+    <div class="modal-container">
+        <div class="modal">
+            <div class="header">
+                <h1>Note Title</h1>
+                <label>Title</label>
+                <input type="text" id="title">
+            </div>
+            <div class="close-modal" id="close-modal">
+                <span id="close-icon">&times;</span>
+            </div>
+            <div class="modal-content">
+                <label>Note Description</label>
+                <textarea placeholder="write something..." id="description" required></textarea>
+            </div>
+            <div class="add-btn">
+                <button>Add Note</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="app">
+        <div class="notes-container">
+            <div class="add-container">
+                <div class="add-box">
+                    <div class="add-icon">
+                        +
+                    </div>
+                    <p>Add Note</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
