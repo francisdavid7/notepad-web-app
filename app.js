@@ -133,6 +133,10 @@ addNoteBtn.addEventListener('click', () => {
 
 });
 
+window.addEventListener('resize', function(){
+  location.refresh();
+});
+
 // modal.addEventListener('click', (e) => {
 //     if (e.target.className === 'close-modal' || e.target === closeIcon) {
 //         modalContainer.classList.remove('show-modal');
