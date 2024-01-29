@@ -1,4 +1,4 @@
-// Selecting needed elements from the DOM
+// Selecting neccessary elements from the DOM
 const addBox = document.querySelector('.add-box');
 const titleTag = document.getElementById('title');
 const descriptionTag = document.getElementById('description');
@@ -92,6 +92,7 @@ addBox.addEventListener('click', () => {
     modalHeader.innerHTML = 'Add a New Note';
     titleTag.value = '';
     descriptionTag.value = '';
+    addNoteBtn.innerHTML = 'Add Note';
     modalContainer.classList.add('show-modal');
 });
 
@@ -103,7 +104,6 @@ addNoteBtn.addEventListener('click', () => {
     
     let noteTitle = titleTag.value,
     noteDesc = descriptionTag.value;
-    addNoteBtn.innerHTML = "Add Note";
 
     titleTag.value = '';
     descriptionTag.value = '';
@@ -131,14 +131,11 @@ addNoteBtn.addEventListener('click', () => {
         modalCloseIcon.click();
         showNotes();
     }
-    else {
-        addNoteBtn.style.color = "#eee";
-    }
 
 });
 
-window.addEventListener('resize', function(){
-  location.refresh();
+window.addEventListener('resize', () => {
+    location.reload();
 });
 
 // modal.addEventListener('click', (e) => {
