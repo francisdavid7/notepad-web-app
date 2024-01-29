@@ -103,6 +103,7 @@ addNoteBtn.addEventListener('click', () => {
     
     let noteTitle = titleTag.value,
     noteDesc = descriptionTag.value;
+    addNoteBtn.innerHTML = "Add Note";
 
     titleTag.value = '';
     descriptionTag.value = '';
@@ -129,6 +130,9 @@ addNoteBtn.addEventListener('click', () => {
         localStorage.setItem('notes', JSON.stringify(notes));
         modalCloseIcon.click();
         showNotes();
+    }
+    else {
+        addNoteBtn.style.color = "#eee";
     }
 
 });
